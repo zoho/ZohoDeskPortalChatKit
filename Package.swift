@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = "4.1.1"
+let version = "4.2.0"
 let package = Package(
     name: "ZohoDeskPortalChatKit",
     platforms: [
@@ -16,20 +16,20 @@ let package = Package(
             targets: ["ZohoDeskPortalChatKit", "ZDChat", "ZohoPubSubSDK", "ZDOneChatSDK", "ZDHelperKit", "ZohoDeskPortalChatKitPackage"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/zoho/ZohoDeskPortalConfiguration.git", exact: "4.1.2")
+        .package(url: "https://github.com/zoho/ZohoDeskPortalConfiguration.git", exact: "4.2.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ZohoDeskPortalChatKit", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalChatKit/\(version)/ZohoDeskPortalChatKit.zip", checksum: "5a6b8e3cc49b29fab0d777584740b7b60a1282bfcd60a477a4c9d6276e05aa19"),
+        .binaryTarget(name: "ZohoDeskPortalChatKit", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalChatKit/\(version)/ZohoDeskPortalChatKit.zip", checksum: "3a20a641d9a8d2a001597078bb48250b0f6914b3138ebd879fc9f54de2d9ca9a"),
         
-        .binaryTarget(name: "ZDChat", url: "https://maven.zohodl.com/ZohoDesk/ZohoGC/iOS/2.4.8/ZDChat.zip", checksum: "0e738e7fa93243d790ac76e654ffe8b2b31fcce8830b953cf7285dda9179e842"),
+        .binaryTarget(name: "ZDChat", url: "https://maven.zohodl.com/ZohoDesk/ZohoGC/iOS/2.4.9/ZDChat.zip", checksum: "6c8928bd5ae501b363bf0d73c16108799c846993b5514817b5d273e5ddfe1df7"),
         
-        .binaryTarget(name: "ZohoPubSubSDK", url: "https://maven.zohodl.com/ZohoDesk/ZohoPubSubSDK/iOS/1.2.9/framework/ZohoPubSubSDK.zip", checksum: "5db109908d90d8cf1f66828b83f6e1647eec729bb721cbd8c4bd272d6ee06e2f"),
+        .binaryTarget(name: "ZohoPubSubSDK", url: "https://maven.zohodl.com/ZohoDesk/ZohoPubSubSDK/iOS/1.2.10/framework/ZohoPubSubSDK.zip", checksum: "9e9ee51acbb827d86bed1976c9993f83c31ab57ac9bfa297f41b7e97641999e9"),
         
-        .binaryTarget(name: "ZDOneChatSDK", url: "https://maven.zohodl.com/ZohoDesk/ZohoGC/iOS/1.3.4/ZDOneChatSDK.zip", checksum: "6a6288dbc7361160811eb0214aee185a744ff1ce477715ba80bc361f70e00aa7"),
+        .binaryTarget(name: "ZDOneChatSDK", url: "https://maven.zohodl.com/ZohoDesk/ZohoGC/iOS/1.3.5/ZDOneChatSDK.zip", checksum: "b85103c405de1505c6f3e5a9d828e365cceb20a9ddc8439e34a2f433472418a0"),
         
-        .binaryTarget(name: "ZDHelperKit", url: "https://static.zohocdn.com/zohodeskmobile/ZDHelperKit/iOS/1.0.2/ZDHelperKit.zip", checksum: "6279c5343f1019ae91834cef89a7d55dde0acffa44d6a00a463ce75dd92c21df"),
+        .binaryTarget(name: "ZDHelperKit", url: "https://static.zohocdn.com/zohodeskmobile/ZDHelperKit/iOS/1.0.3/ZDHelperKit.zip", checksum: "5b7c5bb17d0f10478081fcb3025b20d9486642864665ede7eac96364b6a9a4b7"),
         
         .target(
             name: "ZohoDeskPortalChatKitPackage",

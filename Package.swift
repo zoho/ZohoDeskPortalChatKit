@@ -3,7 +3,7 @@
 
 import PackageDescription
 
-let version = Version("4.6.6")
+let version = Version("4.6.8")
 let package = Package(
     name: "ZohoDeskPortalChatKit",
     platforms: [
@@ -21,7 +21,7 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
-        .binaryTarget(name: "ZohoDeskPortalChatKit", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalChatKit/\(version.description)/ZohoDeskPortalChatKit.zip", checksum: "38b2afe9c7b1ebaec9fcb103ed694cf9070ef9b78e17d3837639f9da5b36ffd4"),
+        .binaryTarget(name: "ZohoDeskPortalChatKit", url: "https://maven.zohodl.com/ZohoDesk/ZohoDeskPortalChatKit/\(version.description)/ZohoDeskPortalChatKit.zip", checksum: "f96312b1c46bdb3e6788675a7a408666966dd71da12af2893d85983c57874b88"),
         
         .binaryTarget(name: "ZDChat", url: "https://maven.zohodl.com/ZohoDesk/ZohoGC/iOS/2.6.2/ZDChat.zip", checksum: "f3e55c890997411dce2795339662156ff661f3bc3ac2ed0eee89e3263ba1b807"),
         
